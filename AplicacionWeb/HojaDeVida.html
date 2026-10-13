@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <title>Juan Sebastian Rosas Carmona | Portafolio</title>
+  <meta name="description" content="Portafolio de Juan Sebastian Rosas Carmona: persona proactiva, comprometida y orientada a soluciones. Experiencia, habilidades y primeros proyectos web con HTML, CSS y JavaScript.">
+  <meta name="author" content="Juan Sebastian Rosas Carmona">
+  <meta name="theme-color" content="#0b0b0b">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Juan Sebastian Rosas Carmona | Portafolio">
+  <meta property="og:description" content="Proactivo, comprometido y orientado a soluciones. Conoce mi trayectoria y habilidades.">
+  <meta property="og:image" content="FotoMia.png">
+
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="ValorAgregado.js" defer></script>
+</head>
+
+<body>
+
+  
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  
+  <header class="header" id="header">
+    <a href="#inicio" class="logo" aria-label="Ir al inicio">ING_ROSAS<span>.</span></a>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#inicio" data-label="Works">Works</a>
+      <a href="#skills" data-label="Expertise">Expertise</a>
+      <a href="#experiencia" data-label="Timeline">Timeline</a>
+      <a href="#contacto" data-label="Journal">Journal</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="badge"><i class="dot" aria-hidden="true"></i> Available for Q3/Q4 '26</span>
+      <a href="#contacto" class="btn btn-outline">Get in touch</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+
+   
+    <section class="hero reveal" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Portafolio · 2026</p>
+
+        <h1 id="hero-title">
+          <span class="h1-line"><span>Juan Sebastian</span></span>
+          <span class="h1-line"><span>Rosas Carmona</span></span>
+        </h1>
+
+        <p class="hero-desc">
+          Soy una persona proactiva, comprometida y orientada a encontrar
+          soluciones. Me gusta trabajar en equipo, aportar ideas y asumir
+          nuevos retos. Cuando tengo un objetivo, me enfoco completamente en
+          alcanzarlo y busco siempre la manera de mejorar el resultado.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#experiencia" class="btn btn-primary">Ver trayectoria <span aria-hidden="true">→</span></a>
+          <a href="#contacto" class="btn btn-ghost">Contáctame</a>
+        </div>
+
+        
+        <ul class="hero-stats" aria-label="Datos rápidos">
+          <li>
+            <strong data-count="2">0</strong><span>Idiomas</span>
+          </li>
+          <li>
+            <strong data-count="1">0</strong><span>Proyecto web</span>
+          </li>
+          <li>
+            <strong data-count="100" data-suffix="%">0</strong><span>Compromiso</span>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="hero-photo">
+        <div class="photo-frame">
+          <img src="FotoMia.png" alt="Foto de Juan Sebastian Rosas Carmona" fetchpriority="high" decoding="async">
+        </div>
+        <span class="photo-tag" aria-hidden="true">// ING_ROSAS</span>
+      </figure>
+    </section>
+
+    
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>HTML5</span><span>•</span>
+        <span>CSS3</span><span>•</span>
+        <span>JavaScript</span><span>•</span>
+        <span>Trabajo en equipo</span><span>•</span>
+        <span>Bilingüe</span><span>•</span>
+        <span>Resolución de problemas</span><span>•</span>
+        <!-- Se repite para que el bucle sea continuo -->
+        <span>HTML5</span><span>•</span>
+        <span>CSS3</span><span>•</span>
+        <span>JavaScript</span><span>•</span>
+        <span>Trabajo en equipo</span><span>•</span>
+        <span>Bilingüe</span><span>•</span>
+        <span>Resolución de problemas</span><span>•</span>
+      </div>
+    </div>
+
+    
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="skills-left">
+        <span class="line"></span>
+        <h2 id="skills-title">MY SKILLS</h2>
+
+        
+        <figure class="code-window">
+          <figcaption class="code-bar">
+            <span class="win-dot red"></span>
+            <span class="win-dot yellow"></span>
+            <span class="win-dot green"></span>
+            <span class="code-filename">index.html</span>
+          </figcaption>
+
+          <pre class="code" id="code" aria-label="Ejemplo de código HTML y CSS"><code>
+<span class="l"><span class="tag">&lt;!DOCTYPE html&gt;</span></span>
+<span class="l"><span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="str">"es"</span><span class="tag">&gt;</span></span>
+<span class="l"><span class="tag">&lt;head&gt;</span></span>
+<span class="l">  <span class="tag">&lt;meta</span> <span class="attr">charset</span>=<span class="str">"UTF-8"</span><span class="tag">&gt;</span></span>
+<span class="l">  <span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="str">"viewport"</span> <span class="attr">content</span>=<span class="str">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></span>
+<span class="l">  <span class="tag">&lt;title&gt;</span>¡Hola Mundo!<span class="tag">&lt;/title&gt;</span></span>
+<span class="l">  <span class="tag">&lt;style&gt;</span></span>
+<span class="l">    <span class="cmt">/* Estilos generales para centrar todo en pantalla */</span></span>
+<span class="l">    <span class="sel">body</span> {</span>
+<span class="l">      <span class="prop">margin</span>: <span class="val">0</span>;</span>
+<span class="l">      <span class="prop">height</span>: <span class="val">100vh</span>;</span>
+<span class="l">      <span class="prop">display</span>: <span class="val">flex</span>;</span>
+<span class="l">      <span class="prop">justify-content</span>: <span class="val">center</span>;</span>
+<span class="l">      <span class="prop">align-items</span>: <span class="val">center</span>;</span>
+<span class="l">      <span class="prop">background-color</span>: <span class="val">#0a0f12</span>;</span>
+<span class="l">      <span class="prop">font-family</span>: <span class="str">'Segoe UI'</span>, system-ui, sans-serif;</span>
+<span class="l">      <span class="prop">overflow</span>: <span class="val">hidden</span>;</span>
+<span class="l">    }</span>
+<span class="l"></span>
+<span class="l">    <span class="cmt">/* Texto con degradado animado y sombra brillante */</span></span>
+<span class="l">    <span class="sel">h1</span> {</span>
+<span class="l">      <span class="prop">font-size</span>: <span class="val">5rem</span>;</span>
+<span class="l">      <span class="prop">font-weight</span>: <span class="val">900</span>;</span>
+<span class="l">      <span class="prop">letter-spacing</span>: <span class="val">-2px</span>;</span>
+<span class="l">      <span class="prop">margin</span>: <span class="val">0</span>;</span>
+</code></pre>
+        </figure>
+      </div>
+
+      <div class="skills-right">
+
+        <article class="skill reveal">
+          <span class="num" aria-hidden="true">I.</span>
+          <div class="skill-body">
+            <h3><span class="skill-icon" aria-hidden="true">🧩</span> RESOLUCION DE PROBLEMAS</h3>
+            <p>Ante un problema, mi primera reacción es buscar una solución. Analizo la situación, identifico diferentes alternativas y trabajo hasta encontrar la opción más efectiva.</p>
+          </div>
+        </article>
+
+        <article class="skill reveal">
+          <span class="num" aria-hidden="true">II.</span>
+          <div class="skill-body">
+            <h3><span class="skill-icon" aria-hidden="true">🤝</span> TRABAJO EN EQUIPO</h3>
+            <p>Me gusta colaborar con diferentes personas, escuchar ideas y aportar las mías. Considero que un buen equipo puede encontrar soluciones más completas cuando todos participan.</p>
+          </div>
+        </article>
+
+        <article class="skill reveal">
+          <span class="num" aria-hidden="true">III.</span>
+          <div class="skill-body">
+            <h3><span class="skill-icon" aria-hidden="true">⚡</span> PROACTIVIDAD</h3>
+            <p>No me gusta esperar a que me digan qué hacer. Si identifico algo que puede mejorarse o una tarea que necesita atención, tomo la iniciativa y busco la manera de actuar.</p>
+          </div>
+        </article>
+
+        <article class="skill reveal">
+          <span class="num" aria-hidden="true">IV.</span>
+          <div class="skill-body">
+            <h3><span class="skill-icon" aria-hidden="true">🎯</span> DEDICACION</h3>
+            <p>Cuando algo realmente me importa, me comprometo al máximo. Soy una persona muy dedicada y puedo llegar a ser obsesivamente detallista cuando quiero que un proyecto quede bien hecho.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="experience" id="experiencia" aria-labelledby="exp-title">
+      <div class="section-head reveal">
+        <span class="line"></span>
+        <h2 id="exp-title">EXPERIENCE &amp; TRAJECTORY</h2>
+      </div>
+
+      <ol class="timeline">
+
+        <li class="row reveal">
+          <span class="year">2025 - 2026</span>
+          <p>Fortaleci el ingles mediante la atencion de clientes en un entorno laboral bilingue</p>
+          <div class="thumb">
+            <img src="imagenColEEUU.png" alt="Banderas de Estados Unidos y Colombia" loading="lazy" decoding="async">
+          </div>
+        </li>
+
+        <li class="row reveal">
+          <span class="year">2026 --- Primera pagina Web</span>
+          <p>Diseño e implementacion de una interfaz web utilizando HTML y CSS enfocada a la presentacion de informacion, organizacion del contenido y experiencia del usuario</p>
+          <div class="thumb">
+            <img src="lenguajes.png" alt="Logos de HTML y CSS" loading="lazy" decoding="async">
+          </div>
+        </li>
+
+        <li class="row row-next reveal" aria-label="Próximo capítulo">
+          <span class="year">2026 → ...</span>
+          <p>Siguiente paso: seguir aprendiendo JavaScript y construir proyectos cada vez más completos.</p>
+          <div class="thumb thumb-next" aria-hidden="true"><span>+</span></div>
+        </li>
+
+      </ol>
+    </section>
+
+    
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-inner reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Contacto</p>
+        <h2 id="contact-title">¿Trabajamos juntos?</h2>
+        <p class="contact-text">
+          Estoy abierto a nuevas oportunidades, colaboraciones y retos.
+          Escríbeme y conversemos sobre cómo puedo aportar a tu proyecto.
+        </p>
+
+        
+        <div class="contact-links">
+          <a href="mailto:tucorreo@ejemplo.com" class="btn btn-primary">Enviar correo <span aria-hidden="true">→</span></a>
+          <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Juan Sebastian Rosas Carmona. Todos los derechos reservados.</p>
+    <a href="#inicio" class="back-top" aria-label="Volver arriba">↑ Volver arriba</a>
+  </footer>
+
+</body>
+</html>
